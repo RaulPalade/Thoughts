@@ -1,0 +1,20 @@
+//
+//  Cell.swift
+//  Thoughts
+//
+//  Created by Raul Palade on 21/02/23.
+//
+
+import UIKit
+
+class Cell: UIView {
+
+    /*
+    // Only override draw() if you perform custom drawing.
+    // An empty implementation adversely affects performance during animation.
+    override func draw(_ rect: CGRect) {
+        // Drawing code
+    }
+    */
+
+}
