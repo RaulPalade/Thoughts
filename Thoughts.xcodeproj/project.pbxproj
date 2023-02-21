@@ -28,6 +28,7 @@
 		03BC8D4A29A4DEF000FA73FD /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC8D4929A4DEF000FA73FD /* Cell.swift */; };
 		03BC8D4E29A4DF3F00FA73FD /* PostPreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC8D4D29A4DF3F00FA73FD /* PostPreviewTableViewCell.swift */; };
 		03BC8D5029A4DF5000FA73FD /* PostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC8D4F29A4DF5000FA73FD /* PostHeaderTableViewCell.swift */; };
+		03BC8D5229A5123C00FA73FD /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BC8D5129A5123C00FA73FD /* HapticsManager.swift */; };
 		03C1720C29A0C8DE00E7C961 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03C1720B29A0C8DE00E7C961 /* GoogleService-Info.plist */; };
 		03C1720E29A0CD9800E7C961 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C1720D29A0CD9800E7C961 /* User.swift */; };
 		03C1721229A0CDBB00E7C961 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C1721129A0CDBB00E7C961 /* BlogPost.swift */; };
@@ -56,6 +57,7 @@
 		03BC8D4929A4DEF000FA73FD /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		03BC8D4D29A4DF3F00FA73FD /* PostPreviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreviewTableViewCell.swift; sourceTree = "<group>"; };
 		03BC8D4F29A4DF5000FA73FD /* PostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		03BC8D5129A5123C00FA73FD /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		03C1720B29A0C8DE00E7C961 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		03C1720D29A0CD9800E7C961 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		03C1721129A0CDBB00E7C961 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				0357C162299FE4760003F48B /* DatabaseManager.swift */,
 				0357C164299FE4840003F48B /* AuthManager.swift */,
 				0357C166299FE4900003F48B /* StorageManager.swift */,
+				03BC8D5129A5123C00FA73FD /* HapticsManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				03BC8D4A29A4DEF000FA73FD /* Cell.swift in Sources */,
 				0357C136299FE2090003F48B /* AppDelegate.swift in Sources */,
 				0357C154299FE3EF0003F48B /* SignInViewController.swift in Sources */,
+				03BC8D5229A5123C00FA73FD /* HapticsManager.swift in Sources */,
 				03C1720E29A0CD9800E7C961 /* User.swift in Sources */,
 				0357C14F299FE3930003F48B /* ProfileViewController.swift in Sources */,
 				0357C151299FE3CD0003F48B /* TabBarViewController.swift in Sources */,

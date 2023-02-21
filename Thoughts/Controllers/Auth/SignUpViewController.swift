@@ -95,6 +95,8 @@ class SignUpViewController: UITabBarController {
             return
         }
 
+        HapticsManager.shared.vibrateForSelection()
+
         // Create the user
         AuthManager.shared.signUp(email: email, password: password) { [weak self] success in
             if success {

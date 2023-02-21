@@ -98,12 +98,18 @@ class CreateNewPostViewController: UITabBarController {
         // Upload header image
         StorageManager.shared.uploadBlogHeaderImage(email: email, image: headerImage, postId: newPostId) { success in
             guard success else {
+                DispatchQueue.main.async {
+                    HapticsManager.shared.vibrate(for: .error)
+                }
                 print("Failed to post url for header")
                 return
             }
             StorageManager.shared.downloadUrlForPostHeader(email: email, postId: newPostId) {
                 url in
                 guard let headerUrl = url else {
+                    DispatchQueue.main.async {
+                        HapticsManager.shared.vibrate(for: .error)
+                    }
                     return
                 }
 
@@ -112,11 +118,14 @@ class CreateNewPostViewController: UITabBarController {
 
                 DatabaseManager.shared.insert(blogPost: post, email: email) { [weak self] posted in
                     guard posted else {
-                        print("Failed to post new Blog Article")
+                        DispatchQueue.main.async {
+                            HapticsManager.shared.vibrate(for: .error)
+                        }
                         return
                     }
 
                     DispatchQueue.main.async {
+                        HapticsManager.shared.vibrate(for: .success)
                         self?.didTapCancel()
                     }
                 }
